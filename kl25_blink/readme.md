@@ -10,10 +10,14 @@ You need to install tools specified in the guide above
 
 ## Build targets
 First we need to generate makefiles using `CMake`, cd into to the `build` dir
-OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja" -G "Ninja" ..`
-WIN: OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja.exe" -G "Ninja" ..`
 
-The we can build directly using `CMake` or `Ninja`
+On OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja" -G "Ninja" ..`
+
+On WIN: OSX: `cmake -DCMAKE_MAKE_PROGRAM="ninja.exe" -G "Ninja" ..`
+
+
+The we can build directly using `Make` or `Ninja`
+
 `cmake --build .` builds execuables
 
 `cmake --build . --target clean` cleans the build dir
